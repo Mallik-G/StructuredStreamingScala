@@ -19,6 +19,7 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-streaming" % sparkVersion,
   "org.apache.spark" %% "spark-hive" % sparkVersion,
   "org.apache.spark" %% "spark-sql-kafka-0-10" % sparkVersion,
-  "com.typesafe.akka" %% "akka-actor_2.11" % "2.5.1",
-  "org.typelevel"    %% "cats" % "0.7.2"
+  "org.typelevel"    %% "cats" % "0.7.2",
+  "com.typesafe.akka" %% "akka-actor" % "2.4.0"
+
 )

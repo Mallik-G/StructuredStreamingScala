@@ -23,7 +23,7 @@ object WatchADeathOfActor {
 }
 
 
-class Master extends Actor {
+class Master1 extends Actor {
 
 
   override def receive = {

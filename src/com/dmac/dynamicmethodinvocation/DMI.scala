@@ -17,6 +17,7 @@ object DMI {
     // The below method would call the applyDynamic() method
     fad.dMethod(1, "2", 3f)
 
+
     // The below method would call the applyDynamicNamed() method
     fad.nameMethodCall(data="citrix", data2="install_shield", data3="kafka")
 

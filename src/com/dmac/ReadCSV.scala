@@ -17,3 +17,4 @@ object ReadCSV extends App {
   bufferedSource.close
 
 }
+

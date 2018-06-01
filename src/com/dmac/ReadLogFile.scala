@@ -8,19 +8,15 @@ import scala.io.Source
 object ReadLogFile extends App {
 
 
-  // In single quotes
-  val character_literal = 'B'
+  val list = List(1,2,3,4,5)
 
-  // In double quotes
-  val string_datatype = "B"
+  list.reduceLeft((x,y) => x+y)
 
+  list.reduceRight((x,y) => x+y)
 
-  val dataArray = new Array[String](3)
-  dataArray(0) = "CASSANDRA"
-  dataArray.foreach(each => println(each))
+  list.reduce((x,y) => x+y)
 
-  val noSQLArray = Array("Cassandra", "BigSQL", "REDIS", 100)
-  noSQLArray.foreach(each => println(each))
+  list.fold(10)((x,y) => x+y)
 
 //  val lines = Source.fromFile("/home/dharshekthvel/java_error_in_IDEA_7548.log")
 //                    .getLines()

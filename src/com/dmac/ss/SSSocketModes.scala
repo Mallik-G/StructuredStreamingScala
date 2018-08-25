@@ -29,8 +29,9 @@ object SSSocketModes {
     import sparkSession.implicits._
     val socketDS = eachLineStream.as[String]
 
-    val streamWriter  = socketDS.writeStream.outputMode(OutputMode.Update()).trigger(Trigger.ProcessingTime(10, TimeUnit.SECONDS))
-          .format("console")
+    val streamWriter  = socketDS.writeStream.outputMode(OutputMode.Update())
+                                            .trigger(Trigger.ProcessingTime(10, TimeUnit.SECONDS))
+                                            .format("console")
 
     val streamingQuery = streamWriter.start()
 

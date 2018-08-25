@@ -15,7 +15,7 @@ object BatchJOB {
     val sparkContext = ss.sparkContext
 
 
-    val csvDF = ss.sqlContext.read.option("header", "true").csv("/Users/dharshekthvel/temp/auth.csv")
+    val csvDF = ss.sqlContext.read.option("header", "true").csv("/Users/dharshekthvel/ac/code/scalatrainingintellij/data/auth.csv")
 
     csvDF.createTempView("AUTH_TABLE")
 

@@ -25,7 +25,16 @@ object ScalaForEachAndMap {
         v1.toLowerCase
     }}).foreach(x => println(x))
 
+    meshList.map(mapperFunction)
 
+    println("Computed")
+
+  }
+
+  val mapperFunction = new Function[String, Unit] {
+    override def apply(v1: String): Unit = {
+      println(v1)
+    }
   }
 
 }

@@ -11,7 +11,15 @@ object CurryingFunctions {
 
   def main(args : Array[String]) = {
 
+
+
     val paf = elucidateMyNumber(1) (_)
+
+    // [or]
+
+    //val paf = elucidateMyNumber(1) _
+
+
     println(paf(2)(3))
   }
 }
